@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
 import Header from "../components/layouts/inc/Header";
+import etudiantImg from '../assets/images/etudiants.jpg';
+import diplomateImg from '../assets/images/diplomate.jpg';
+
 
 const Home=()=>{
     return (
@@ -13,28 +16,28 @@ const Home=()=>{
                         <div className="row row-cols-1 row-cols-md-3 g-4">
                             <div className="col">
                                 <div className="card h-100 text-center">
-                                <img src="..." className="card-img-top" alt="..." />
+                                <img src={diplomateImg} className="card-img-top ms-auto h-100" alt="etudiants" />
                                 <div className="card-body">
-                                    <h5 className="card-title">Card title</h5>
+                                    <h5 className="card-title">Etudiants et Doctorants Guinéens</h5>
                                     <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                 </div>
                                 </div>
                             </div>
                             <div className="col">
                                 <div className="card h-100 text-center">
-                                <img src="..." className="card-img-top" alt="..."/>
+                                <img src={diplomateImg} className="card-img-top ms-auto h-100" alt="diplomate"/>
                                 <div className="card-body">
-                                    <h5 className="card-title">Card title</h5>
-                                    <p className="card-text">This is a short card.</p>
+                                    <h5 className="card-title">Touristes et Résidents permanents</h5>
+                                    <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                 </div>
                                 </div>
                             </div>
                             <div className="col">
                                 <div className="card h-100 text-center">
-                                    <img src="..." className="card-img-top" alt="..."/>
+                                    <img src={diplomateImg} className="card-img-top ms-auto h-100" alt="diplomate"/>
                                     <div className="card-body">
-                                        <h5 className="card-title">Card title</h5>
-                                        <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                                        <h5 className="card-title">Diplomates et Militaires</h5>
+                                        <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                     </div>
                                 </div>
                             </div>

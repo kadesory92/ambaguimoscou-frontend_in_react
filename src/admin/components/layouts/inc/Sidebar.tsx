@@ -23,13 +23,16 @@ const Sidebar=()=>{
                             <div className="sb-sidenav-menu-heading">Interface</div>
                             <Link className="nav-link collapsed" to="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
                                 <div className="sb-nav-link-icon"><i className="fas fa-columns"></i></div>
-                                Layouts
+                                Gestion du blog d'articles
                                 <div className="sb-sidenav-collapse-arrow"><i className="fas fa-angle-down"></i></div>
                             </Link>
                             <div className="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav className="sb-sidenav-menu-nested nav">
-                                    <Link className="nav-link" to="layout-static.html">Static Navigation</Link>
-                                    <Link className="nav-link" to="layout-sidenav-light.html">Light Sidenav</Link>
+                                <Link className="nav-link" to="create-category">Ajouter une Catégory</Link>
+                                    <Link className="nav-link" to="list-categories">Afficher Categories</Link>
+
+                                    <Link className="nav-link" to="create-post">Ajouter un article</Link>
+                                    <Link className="nav-link" to="list-posts">Afficher les articles</Link>
                                 </nav>
                             </div>
                             <Link className="nav-link collapsed" to="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
@@ -73,10 +76,6 @@ const Sidebar=()=>{
                                 Tables
                             </Link>
                         </div>
-                    </div>
-                    <div className="sb-sidenav-footer">
-                        <div className="small">Logged in as:</div>
-                        Start Bootstrap
                     </div>
                 </nav>
             </div>

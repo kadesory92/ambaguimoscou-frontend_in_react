@@ -4,7 +4,7 @@ const Navbar=()=>{
     return (
         <nav className="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             
-            <Link className="navbar-brand ps-3" to="/admin">Ambaguimoscou</Link>
+            <Link className="navbar-brand ps-3" to="/">Ambaguimoscou</Link>
         
             <Link className="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" to=""><i className="fas fa-bars"></i></Link>
         
@@ -24,7 +24,7 @@ const Navbar=()=>{
                         <li><Link className="dropdown-item" to="#!">Settings</Link></li>
                         <li><Link className="dropdown-item" to="#!">Activity Log</Link></li>
                         <li><hr className="dropdown-divider" /></li>
-                        <li><Link className="dropdown-item" to="#!">Logout</Link></li>
+                        <li><Link className="dropdown-item" to="...">Logout</Link></li>
                     </ul>
                 </li>
             </ul>

@@ -3,8 +3,8 @@ import React from 'react';
 //import './App.css';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import PublicRouter from './routes/publicRoutes/PublicRouter';
-import AdminRouter from './routes/publicRoutes/AdminRouter';
-import UserRouter from './routes/publicRoutes/UserRouter';
+import AdminRouter from './routes/protecteRoutes/AdminRouter';
+import UserRouter from './routes/protecteRoutes/UserRouter';
 
 function App() {
   return (
