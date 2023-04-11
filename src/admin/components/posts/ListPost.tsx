@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 interface IPosts{
     id:number,
+    category_id:number,
     title:string,
     content:string,
     image:string
@@ -41,53 +42,46 @@ const ListPost=()=>{
             return (
                 <tr key={index}>
                     <td>{post.id}</td>
+                    <td>{post.category_id}</td>
                     <td>{post.title}</td>
                     <td>{post.content}</td>
-                    <td>{post.image}</td>
-                    <td>
-                        <Link to="" className="btn btn-success btn-sm">Edit</Link>
-                    </td>
-                    <td>
-                        <button type="button" className="btn btn-danger btn-sm">Delete</button>
-                    </td>
+                    <td><img src={`http://127.0.0.1:8000/${post.image}`} width="5Opx" alt="Post Image" /></td>
+                    <td><Link to="" className="btn btn-success btn-sm">Edit</Link></td>
+                    <td><button type="button" className="btn btn-danger btn-sm">Delete</button></td>
                 </tr>
             );
         });
     }
 
     return (
-            <>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-12 mt-2">
-                            <div className="card">
-                                <div className="card-header">
-                                    <h4>Post Data
-                                        <Link to="/admin/create-post" className="btn btn-primary btn-sm float-end"> Add Post</Link>
-                                    </h4>
-                                </div>
-                                <div className="card-body">
-                                    
-                                    <table className="table table-bordered table-striped">
-                                        <thead>
-                                            <tr>
-                                                <th>ID</th>
-                                                <th>Title</th>
-                                                <th>Content</th>
-                                                <th>Image</th>
-                                                
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            {posts_HTMLTABLE}
-                                        </tbody>
-                                    </table>
-
-                                </div>
-                            </div>
-                        </div>
+            <>           
+                <div className="card px-4 mt-5">
+                    <div className="card-header">
+                        <h4>Post Data
+                            <Link to="/admin/create-post" className="btn btn-primary btn-sm float-end"> Add Post</Link>
+                        </h4>
                     </div>
-                </div>
+                    <div className="card-body">
+                        <div className="table-responsive">
+                            <table className="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Category</th>
+                                        <th>Title</th>
+                                        <th>Content</th>
+                                        <th>Image</th>
+                                        <th>Editer</th>
+                                        <th>Supprimer</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {posts_HTMLTABLE}
+                                </tbody>
+                            </table>
+                        </div>  
+                    </div>
+                </div>        
             </>
         )
 }

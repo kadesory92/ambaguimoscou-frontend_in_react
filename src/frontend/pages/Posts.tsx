@@ -1,4 +1,8 @@
 const Posts=()=>{
-    return <></>
+    return (
+        <>
+            
+        </>
+    )
 }
 export default Posts;
